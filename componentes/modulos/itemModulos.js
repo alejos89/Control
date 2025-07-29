@@ -8,7 +8,7 @@ export function item(){
 
  let img = document.createElement('img')
  img.className = "img1";
- img.src = "assets/ww.jpg"
+ img.src = "/Control/assets/ww.jpg"
  item.appendChild(img);
 
  let text = document.createElement('p');
