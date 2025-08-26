@@ -1,6 +1,6 @@
 function header(){
  let header= document.createElement('header');
-header.innerText="Alejoss:)";
+header.innerText="Tienda de Alejos :)";
 header.className="header";
 
  let div=document.createElement('div');
@@ -10,7 +10,7 @@ header.className="header";
  //src
  let img=document.createElement('img')
  img.className="img";
- img.src="https://images.icon-icons.com/3261/PNG/512/github_logo_icon_206752.png"
+ img.src="https://static.truckersmp.com/images/vtc/logo/30141.1607203704.png";
  div.appendChild(img);
  return header;
 

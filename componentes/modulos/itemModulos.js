@@ -15,7 +15,7 @@ export function item(title, image, description, price) {
     img.src = image;
     img.alt = title;
 
-    // descripción
+    // descripciónw
     let desc = document.createElement("p");
     desc.textContent = description;
     desc.className="desc";
@@ -23,7 +23,7 @@ export function item(title, image, description, price) {
     // precio
     let precio = document.createElement("p");
     precio.textContent = `Precio: $${price}`;
-    precio.className="price"
+    precio.className="price";
 
   
     contenedor.appendChild(titulo);
