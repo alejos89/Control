@@ -4,6 +4,6 @@
     box-sizing: border-box;
 }
 
-.ocultar{
-    display: none;
+.verde{
+   background-color: rgb(221, 247, 221);
 }

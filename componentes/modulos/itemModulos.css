@@ -1,27 +1,25 @@
 .item{
     background-color: rgb(255, 255, 255);
- height: 550px;
- width: 400px;
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
- box-shadow: 0 4px 15px rgba(0, 1, 1, 1);
+    height: 550px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 1, 1, 1);
     border-radius: 10px; 
     gap: 1rem;
     border: 2px solid black;
 }
 
-.title
-{
+.title{
     font-size: 1rem;
-padding: 1rem;
+    padding: 1rem;
     color: rgb(0, 0, 0);
 }   
 
 .img1 {
-  width: 30%;
- 
+    width: 30%;
 }
 
 .text {
@@ -29,7 +27,6 @@ padding: 1rem;
     margin-left: 5px;
     color: rgb(241, 202, 202);
 }
-
 
 .verde{
     background-color: green;

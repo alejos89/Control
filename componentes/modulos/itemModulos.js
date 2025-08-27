@@ -25,6 +25,13 @@ export function item(title, image, description, price) {
     precio.textContent = `Precio: $${price}`;
     precio.className="price";
 
+
+
+    contenedor.addEventListener("click", ()=>{
+        contenedor.classList.add("verde");
+
+    })
+
   
     contenedor.appendChild(titulo);
     contenedor.appendChild(img);
