@@ -1,6 +1,6 @@
 .nav{
     background-color: rgb(197, 197, 197);
-    height: 120px;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -12,11 +12,12 @@
     bottom: 0;
     left: 0;
     z-index: 1000;
+    padding: 0.6rem;
 }
 
-.nav div {
-    height: 90px;
-    width: 90px;
+.nav a{
+    height: 70px;
+    width: 70px;
     background-color: rgba(156, 156, 226, 0.742);
     cursor:pointer;
     display: flex;
@@ -27,7 +28,7 @@
     transition: all 0.3s ease;
 }
 
-.nav div:hover{
+.nav a:hover{
     background-color: rgba(120, 120, 200, 0.9);
     transform: scale(1.05); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 

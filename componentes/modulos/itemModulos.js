@@ -1,4 +1,3 @@
-import { listaDeCompras } from "../../database/carrito.js";
 export function item(title, image, description, price) {
     let contenedor = document.createElement("div");
     contenedor.className = "item";
@@ -27,10 +26,11 @@ export function item(title, image, description, price) {
 
 
     contenedor.addEventListener("click", ()=>{
-        contenedor.classList.add("verde");
-        listaDeCompras.push("Comal");
-        console.log(listaDeCompras.length);
-        console.log(listaDeCompras);
+      
+        localStorage.getItem("");x
+        let miCarrito=localStorage.getItem("carritoLista");
+        console.log(miCarrito)
+        
 
     })
 
