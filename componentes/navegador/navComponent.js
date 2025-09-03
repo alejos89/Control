@@ -1,3 +1,4 @@
+import { obtenerProductos} from "../footer/control/miLocalStorage.js";
 export function obtenerNav(){
 
     let nav = document.createElement("div");
@@ -44,15 +45,20 @@ export function obtenerNav(){
 
     let carrito=document.createElement("a");
     let imagen4=document.createElement("img");
+    carrito.className="nav-carrito";
     imagen4.src="https://em-content.zobj.net/source/apple/81/shopping-trolley_1f6d2.png";
     carrito.appendChild(imagen4);
 
-      carrito.addEventListener("click", () => {
-        let section = document.getElementById("contenido-principal");
-           section.classList.add("ocultar");
-                
-    });
+    let divItem=document.createElement("div");
+    divItem.textContent = "";
+    divItem.className="div-item";
+    
 
+    if(obtenerProductos()!=""){
+
+      carrito.appendChild(divItem);
+    }
+    
     nav.appendChild(inicio);
     nav.appendChild(paquetes);
     nav.appendChild(preguntas);

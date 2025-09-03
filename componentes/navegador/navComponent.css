@@ -37,3 +37,25 @@
 .nav img{
     width: 70%;
 }
+
+.nav-carrito{
+    position: relative;
+}
+
+.div-item{
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 15px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+   top: 1px;
+   right: -8px;
+}
+

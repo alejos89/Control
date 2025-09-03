@@ -1,3 +1,6 @@
+import { guardarProducto } from "../footer/control/miLocalStorage.js";
+import { listaDeCompras } from "../../main.js";
+
 export function item(title, image, description, price) {
     let contenedor = document.createElement("div");
     contenedor.className = "item";
@@ -23,13 +26,15 @@ export function item(title, image, description, price) {
     precio.textContent = `Precio: $${price}`;
     precio.className="price";
 
-
+ 
+      
 
     contenedor.addEventListener("click", ()=>{
-      
-        localStorage.getItem("");x
-        let miCarrito=localStorage.getItem("carritoLista");
-        console.log(miCarrito)
+      listaDeCompras.push("Nuevo elemento");
+      guardarProducto(listaDeCompras);
+      console.log("Producto en local Storage");
+      location.reload();
+        
         
 
     })
