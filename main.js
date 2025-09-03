@@ -16,9 +16,6 @@
                 listaDeCompras=[];
                 localStorage.setItem("carrito", JSON.stringify(listaDeCompras));
                 
-            } else {
-                listaDeCompras=JSON.parse(listaDeCompras);
-                
             }
 
         console.log(listaDeCompras);

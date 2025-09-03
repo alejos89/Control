@@ -11,46 +11,31 @@ export function obtenerNav(){
     inicio.appendChild(imagen1);  
 
     
-    inicio.addEventListener("click", () => {
-        let section = document.getElementById("contenido-principal");
-           section.classList.add("ocultar");
-                
-    });
-
-
     let paquetes=document.createElement("a");
     let imagen2=document.createElement("img");
     imagen2.src="https://em-content.zobj.net/source/apple/279/package_1f4e6.png";
     paquetes.appendChild(imagen2);
 
-      paquetes.addEventListener("click", () => {
-        let section = document.getElementById("contenido-principal");
-           section.classList.add("ocultar");
-                
-    });
 
-    
- 
     let preguntas=document.createElement("a");
     let imagen3=document.createElement("img");
     imagen3.src="https://icones.pro/wp-content/uploads/2021/05/icone-question-noir.png";
     preguntas.appendChild(imagen3);
 
-      preguntas.addEventListener("click", () => {
-        let section = document.getElementById("contenido-principal");
-           section.classList.add("ocultar");
-                
-    });
-
+   
 
     let carrito=document.createElement("a");
     let imagen4=document.createElement("img");
     carrito.className="nav-carrito";
     imagen4.src="https://em-content.zobj.net/source/apple/81/shopping-trolley_1f6d2.png";
+     carrito.href="pages/carrito/carrito.html";
     carrito.appendChild(imagen4);
 
     let divItem=document.createElement("div");
     divItem.textContent = "";
+    //Cuantos elementos hay en el carrito
+  
+    divItem.textContent=obtenerProductos().length;
     divItem.className="div-item";
     
 
