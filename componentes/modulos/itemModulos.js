@@ -35,7 +35,7 @@ export function item(title, image, description, price) {
     contenedor.addEventListener("click", ()=>{
         let carritoLocalStorage = obtenerProductos();
         console.log("carrito: ", carritoLocalStorage);
-        carritoLocalStorage.push({precio:price, nombre:title, descripcion:description});
+        carritoLocalStorage.push({precio:price, nombre:title, descripcion:description, imagen:image });
         guardarProducto(carritoLocalStorage);
       console.log("Producto en local Storage");
       location.reload();
